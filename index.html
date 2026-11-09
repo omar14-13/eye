@@ -1,0 +1,9 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><title>العيون</title><link rel="stylesheet" href="style.css"></head><body>
+<canvas id="c"></canvas><div id="vg"></div><div id="hud"></div><div id="msg"></div><div id="bar"><i id="bi"></i></div><img id="candle" src="assets/ca.png"><button id="eb">E</button>
+<div id="s0" class="s"><h1>العيون</h1><p>ابحث عن الحواسيب... ولا تدعه يقترب</p><button onclick="au();S(1)">ابدأ اللعب</button></div>
+<div id="s1" class="s" hidden><h2>تلعب على أي جهاز؟</h2><button onclick="dev(0)">💻 كمبيوتر</button><button onclick="dev(1)">📱 موبايل</button></div>
+<div id="s2" class="s" hidden><div id="mon"><img src="assets/pc.webp"><div id="scr"><p>كود الغرفة</p><b id="code">...</b><p id="pl">اللاعبون: 1</p></div></div>
+<div class="row"><input id="ci" placeholder="كود صديقك" maxlength="5"><button onclick="join()">انضم</button></div>
+<div class="row" id="hr"><select id="mp"><option value="0">خريطة صغيرة</option><option value="1" selected>متوسطة</option><option value="2">كبيرة</option></select><button onclick="hostStart()">ابدأ اللعبة</button></div><p id="st"></p></div>
+<div id="s3" class="s" hidden><h2 id="ot"></h2><button onclick="location.reload()">من جديد</button></div>
+<script src="https://cdn.jsdelivr.net/npm/peerjs@1.5.4/dist/peerjs.min.js"></script><script src="game.js"></script></body></html>
